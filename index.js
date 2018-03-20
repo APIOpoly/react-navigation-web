@@ -1,6 +1,6 @@
 const createHistory = require('history').createBrowserHistory;
 const queryString = require('query-string');
-
+const React = require('React');
 const NavigationActions = require('react-navigation').NavigationActions;
 const addNavigationHelpers = require('react-navigation').addNavigationHelpers;
 
