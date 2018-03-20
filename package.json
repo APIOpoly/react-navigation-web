@@ -1,14 +1,24 @@
 {
   "name": "react-navigation-web",
   "version": "1.0.0-alpha.1",
-  "main": "index.js",
+  "main": "dist/react-navigation-web.js",
   "repository": "https://github.com/react-navigation/react-navigation-web",
   "author": "Eric Vicenti <eric@aven.io>",
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "private": false,
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
     "history": "^4.7.2",
     "query-string": "^6.0.0",
     "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
   }
 }
